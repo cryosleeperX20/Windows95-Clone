@@ -1,39 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Windows 95 Clone</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="desktop">
-    <!-- Desktop icons -->
-    <div class="icon">
-      <img src="icons/mycomputer.png" alt="My Computer" />
-      <span>My Computer</span>
-    </div>
-    <div class="icon">
-      <img src="icons/recyclebin.png" alt="Recycle Bin" />
-      <span>Recycle Bin</span>
-    </div>
-    <div class="icon">
-      <img src="icons/games.png" alt="Games" />
-      <span>Games</span>
-    </div>
+    <!-- Desktop Icons -->
+    <img src="icons/explorer.png" class="icon desktop-icon">
+    <img src="icons/windows(c).png" class="icon desktop-icon">
+    <img src="icons/control_panel.png" class="icon desktop-icon">
+ 
+  </div>
 
-    <!-- Start bar -->
-    <div class="taskbar">
-      <button id="start-button">Start</button>
-      <div class="start-menu hidden" id="start-menu">
-        <ul>
-          <li>Programs</li>
-          <li>Games</li>
-          <li>Settings</li>
-          <li>Shutdown</li>
-        </ul>
-      </div>
-    </div>
+  <!-- Taskbar -->
+  <div class="taskbar">
+    <button class="start-btn" onclick="toggleStartMenu()">
+      <img src="icons/start.png" alt="Start">
+    </button>
+  </div>
+
+  <!-- Start Menu -->
+  <div class="start-menu" id="startMenu">
+    <img src="icons/programs.png" class="start-icon">
+    <img src="icons/help.png" class="start-icon">
+    <img src="icons/run.png" class="start-icon">
+    <img src="icons/find.png" class="start-icon">
+    <img src="icons/settings.png" class="start-icon">
+    <img src="icons/shut_down.png" class="start-icon">
   </div>
 
   <script src="script.js"></script>
