@@ -4,23 +4,36 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Windows 95 Clone</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="taskbar">
-    <button id="start-button">Start</button>
-    <div class="time">🕒 12:00 PM</div>
-  </div>
+  <div class="desktop">
+    <!-- Desktop icons -->
+    <div class="icon">
+      <img src="icons/mycomputer.png" alt="My Computer" />
+      <span>My Computer</span>
+    </div>
+    <div class="icon">
+      <img src="icons/recyclebin.png" alt="Recycle Bin" />
+      <span>Recycle Bin</span>
+    </div>
+    <div class="icon">
+      <img src="icons/games.png" alt="Games" />
+      <span>Games</span>
+    </div>
 
-  <div id="start-menu" class="start-menu hidden">
-    <div class="menu-header">Windows 95</div>
-    <ul>
-      <li>🗂 Programs</li>
-      <li>🖼 Paint</li>
-      <li>🕹 Games</li>
-      <li>⚙ Settings</li>
-      <li>🔒 Log off</li>
-    </ul>
+    <!-- Start bar -->
+    <div class="taskbar">
+      <button id="start-button">Start</button>
+      <div class="start-menu hidden" id="start-menu">
+        <ul>
+          <li>Programs</li>
+          <li>Games</li>
+          <li>Settings</li>
+          <li>Shutdown</li>
+        </ul>
+      </div>
+    </div>
   </div>
 
   <script src="script.js"></script>
