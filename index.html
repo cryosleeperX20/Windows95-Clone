@@ -11,7 +11,6 @@
     <img src="icons/explorer.png" class="icon desktop-icon">
     <img src="icons/windows(c).png" class="icon desktop-icon">
     <img src="icons/control_panel.png" class="icon desktop-icon">
- 
   </div>
 
   <!-- Taskbar -->
@@ -26,11 +25,28 @@
     <img src="icons/programs.png" class="start-icon">
     <img src="icons/find.png" class="start-icon">
     <img src="icons/settings.png" class="start-icon">
-    <img src="icons/game.png" class="start-icon">
+
+    <!-- Game Menu with Submenu -->
+    <div class="game-wrapper" onclick="toggleGameMenu(event)">
+      <img src="icons/game.png" class="start-icon">
+      <!-- Submenu -->
+      <div class="submenu hidden" id="game-submenu">
+        <div class="submenu-item" onclick="openWormholeRunner()">Wormhole Runner</div>
+      </div>
+    </div>
+
     <img src="icons/help.png" class="start-icon">
     <img src="icons/run.png" class="start-icon">
     <img src="icons/shut_down.png" class="start-icon">
   </div>
+  <!-- Game Window -->
+<div id="gameWindow" class="window hidden">
+  <div class="window-header">
+    <span>Wormhole Runner</span>
+    <button onclick="closeGameWindow()">✕</button>
+  </div>
+  <iframe src="game/index.html" frameborder="0"></iframe>
+</div>
 
   <script src="script.js"></script>
 </body>
